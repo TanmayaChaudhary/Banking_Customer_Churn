@@ -3,5 +3,6 @@ fastapi
 python-multipart
 jinja2
 numpy
+scipy
 scikit-learn
 joblib
