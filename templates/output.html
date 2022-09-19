@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Output MLOps App</title>
+    </head>
+    
+    <body style="background-image: url('https://cdn-images-1.medium.com/max/1200/1*MyKDLRda6yHGR_8kgVvckg.png');background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+        <center>
+            <h1 style="border:orange; border-width:5px; border-style:solid; border-radius: 5px; width: 70%;">!!!!! Machine Learning Operations Web Application Demo !!!!!</h1>
+        
+            <div style="display: flex;"> 
+                <div style="width: 50%;">
+                
+                    <table border="20" cellpadding="8px" cellspacing="8px" style="text-align:center;  margin-left: 10%; background-color: grey; border-radius: 10px;">
+                        {% for key,value in output.items() %}
+                        <tr style="border: 1px solid black;">
+                            <th>{{key}}</th>
+                            <td style="color:greenyellow ;">{{value}}</td>
+                        </tr>
+                        {% endfor %}
+
+                    </table>
+                </div>
+
+                <div style="margin-top: 5%; margin-left:2%;">
+                    <h1 style="border: orange; border-width:5px; border-style:solid; border-radius: 5px; background-color: cornflowerblue;"> {{ output['Significance'] }} </h1>
+                </div>
+
+                <div style="margin-top: 35%; margin-left:-10%;">                
+                        <button form="1_form" style="border-radius: 5px ;margin-top: 5%; width: 100px; height: 30px; font-size : 18px; "><a href="http://127.0.0.1:8000/form"> <b>Go Back</b> </a></button>
+                </div>
+
+            </div>    
+        </center>
+
+    </body>
+    
+</html>

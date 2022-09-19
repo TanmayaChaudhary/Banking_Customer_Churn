@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MLOps App</title>
+
+    </head>
+    <body style="background-image: url('https://cdn-images-1.medium.com/max/1200/1*MyKDLRda6yHGR_8kgVvckg.png');background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+
+        <center>
+            <h1 style="border:orange; border-width:5px; border-style:solid; border-radius: 5px; width: 70%;">!!!!! Machine Learning Operations Web Application Demo !!!!!</h1>
+        </center>
+        
+        <div style="display: flex;" >    
+            <div style="width: 50%;">
+                <table border="20" cellpadding="10px" cellspacing="10px" style="text-align:center;  margin-left: 15%; background-color: grey; border-radius: 10px;">
+                    
+                    <form method="post" id="1_form" >
+                        <tr style="border: 1px solid black;">
+                            <td>
+                                <label for ="cred_score"> <b>Credit Score </b></label>
+                            </td>
+                            <td>
+                                <input type="number" id="cred_score" name="creditscore" min="10" max="1000" placeholder="Enter Cust. Credit Score" required style="width: 95%;"/>
+                            </td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>
+                                <label for ="geo"> <b>Geography</b> </label>  
+                            </td>
+                            <td>
+                                <!--<input type="text" id="geo" name="geography" placeholder="Enter Customer Geography" required />-->
+                                <select name="geography" id="geo" style="width:170px;" required> 
+                                    <option value="" disabled selected hidden>Choose Cust.Geography...</option>   
+                                    <option value="France">France</option>    
+                                    <option value="Germany">Germany</option>
+                                    <option value="Spain">Spain</option>
+                                </select>
+                            </td>
+                        </tr> 
+                        <tr style="border: 1px solid black;">
+                            <td>
+                                <label for ="gen"> <b>Gender</b> </label>
+                            </td>
+                            <td>
+                                <select name="gender" id="gen" style="width:170px;" required> 
+                                    <option value="" disabled selected hidden>Choose Gender</option>   
+                                    <option value="Male">Male</option>    
+                                    <option value="Female">Female</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>
+                                <label for ="a_g"> <b>Age</b> </label>
+                            </td>
+                            <td>
+                                <input type="number" id= "a_g"  name="age" min="18" max="100" placeholder="Enter Customer Age" required style="width:95% ;" / >
+                            </td>
+                        </tr>   
+                        <tr style="border: 1px solid black;">
+                            <td>
+                                <label for ="bal"> <b>Balance</b> </label>
+                            </td>
+                            <td> 
+                                <input type="number" id="bal" name="balance" min="0" max="100000000" placeholder="Enter Customer Balance" required  style="width:95% ;"/>
+                            </td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>
+                                <label for ="nm_of_prod"> <b>No. Of Products</b> </label>
+                            </td>
+                            <td> 
+                                <input type="number" id="nm_of_prod" name="numofproducts" min="1" max="10" placeholder="Customer No of Prods." required style="width: 95%;"/>
+                            </td>
+                        </tr>
+                        <tr style="border: 10px solid black; border-radius: 10px;">   
+                            <td>
+                                <label for ="is_actv_mem"> <b>Is Active Member</b> </label>
+                            </td>
+                            <td>
+                                <select name="isactivemember" id="is_actv_mem" style="width:170px;" required> 
+                                    <option value="" disabled selected hidden>Choose Cust. Status...</option>   
+                                    <option value=0>In Active</option>    
+                                    <option value=1>Active</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </form>
+
+                </table>
+
+            </div>
+        
+        
+            <div style="margin-top: 5%;">
+                <center>
+                    <button type="submit" form="1_form" style="border-radius: 5px ;margin-top: 5%; width: 80px; height: 30px; font-size : 18px; "> <b>Predict</b> </button>
+                </center>
+            </div>
+        </div>
+    
+    </body>
+</html>
