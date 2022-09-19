@@ -3,5 +3,5 @@ fastapi
 python-multipart
 jinja2
 numpy 
-scikit-learn==1.0.2
+scikit-learn
 joblib
