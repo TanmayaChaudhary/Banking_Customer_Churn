@@ -3,6 +3,8 @@ from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
 import joblib
 import numpy as np
+np.random.bit_generator = np.random._bit_generator
+
 
 # Loading Transformer & Model.
 transformer = joblib.load("transformer.pkl")
