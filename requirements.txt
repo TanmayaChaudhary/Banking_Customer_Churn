@@ -2,6 +2,6 @@ uvicorn==0.17.6
 fastapi
 python-multipart
 jinja2
+numpy
 scikit-learn
 joblib
-numpy
