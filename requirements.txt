@@ -1,7 +1,7 @@
-uvicorn
-fastapi
-python-multipart
-jinja2
-numpy 
-scikit-learn
-joblib
+uvicorn==0.17.6
+fastapi==0.78.0
+python-multipart==0.0.5
+jinja2==3.1.2
+numpy==1.16.6 
+scikit-learn==1.0.2
+joblib==1.1.0
