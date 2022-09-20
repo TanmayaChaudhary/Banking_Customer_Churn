@@ -17,7 +17,7 @@ templates = Jinja2Templates(directory="templates/")
 # For normal testing.
 @app.get('/')
 def read_form():
-    return 'Hello World From FastAPI!!'
+    return 'Hello World From FastAPI!!     **If you want to go to the main app page append /form in the url bar.**'
 
 # For getting Inputs from User.
 @app.get("/form")
