@@ -15,10 +15,11 @@ Bank need to know which customers are going to exit in future or not.
 ## Deliverable: 
 A web app that end users(Bank Employees & Managers) can utilize to whether a customer going to leave bank in future or not using a Decision Tree model on the backend.
 
-    1. Web App: 
-    https://mlopsdem.azurewebsites.net/form
-    
-    [Warning:- This link may not work sometimes as I used free azure account, so don't know for how much long it get deployed.]
+**1. Web App:** [Click here for Live Web App!!](https://mlopsdem.azurewebsites.net/form) <br/>
+
+    url-> https://mlopsdem.azurewebsites.net/form
+[**Warning:-** This link may not work sometimes as I used free azure account, so don't know for how much long it get deployed.]
+
   <img src="Web_App_Snaps/Web_App_Front_Page.png" width="850" height="500">
 
 ### Repository Structure:
