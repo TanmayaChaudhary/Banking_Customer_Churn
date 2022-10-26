@@ -18,7 +18,8 @@ A web app that end users(Bank Employees & Managers) can utilize to whether a cus
 **1. Web App:** [Click here for Live Web App!!](https://mlopsdem.azurewebsites.net/form) <br/>
 
     url-> https://mlopsdem.azurewebsites.net/form
-[**Warning:-** This link may not work sometimes as I used free azure account, so don't know for how much long it get deployed.]
+[**Warning:-** If this link not working then go below I attached a live demo video here.
+This link may not work sometimes as I used free azure account, so don't know for how much long it get deployed.]
 
   <img src="Web_App_Snaps/Web_App_Front_Page.png" width="850" height="500">
 
