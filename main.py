@@ -50,20 +50,20 @@ def form_post(  request         : Request        ,
                 ]    
     input_data = transformer.transform(input_data_org)
 
-    # output_text_dict = {0: "Customer will not going to Exit in future!!",
-    #                1: "Customer will going to Exit in future!!"
-    #                }
+    output_text_dict = {0: "'\N{Face With Party Horn And Party Hat}' Customer will not going to Exit in future!!' \N{Face With Party Horn And Party Hat}'",
+                    1: "'\N{loudly crying face}' Customer will going to Exit in future!!' \N{loudly crying face}'"
+                    }
 
-    fun_output_text_dict = {0: "'\N{Face With Party Horn And Party Hat}' कहीं नहीं जाएगा ये ग्राहक!!' \N{Face With Party Horn And Party Hat}'" ,
-                       1: "'\N{loudly crying face}' जाने वाले को कौन रोक सकाता है!!' \N{loudly crying face}'"}
+    #fun_output_text_dict = {0: "'\N{Face With Party Horn And Party Hat}' कहीं नहीं जाएगा ये ग्राहक!!' \N{Face With Party Horn And Party Hat}'" ,
+    #                   1: "'\N{loudly crying face}' जाने वाले को कौन रोक सकाता है!!' \N{loudly crying face}'"}
 
     output_dict['Prediction Probability'] = model.predict_proba(input_data).tolist()[0]
     output_dict['Prediction Probability'] = np.round_(output_dict['Prediction Probability'], decimals=2)
     output_dict['Prediction'] = model.predict(input_data).tolist()[0]
     
-    #output_dict['Significance'] = output_text_dict[ output_dict['Prediction'] ]
+    output_dict['Significance'] = output_text_dict[ output_dict['Prediction'] ]
 
-    output_dict['Significance'] = fun_output_text_dict[ output_dict['Prediction'] ]
+    #output_dict['Significance'] = fun_output_text_dict[ output_dict['Prediction'] ]
 
     print(output_dict)
     print(type(output_dict))
