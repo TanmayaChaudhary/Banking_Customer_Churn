@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'MLOpsdem'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_33944B6355AF4DBF909EDF2191E3672E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B597F41ECD9F4B118DE0C9858C18280F }}
